@@ -1,0 +1,69 @@
+/* Container styles */
+.about-container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: auto;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-image {
+  height: 320px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.icon {
+  margin-top: 4px;
+}
+
+.about-text {
+  width: 400px;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.about-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  font-weight: normal;
+  text-align: left;
+
+}

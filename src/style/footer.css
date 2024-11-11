@@ -1,0 +1,64 @@
+/* Footer container */
+
+.footer-container{
+  background-color: #465697;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 2.5rem 1rem; 
+  }
+  
+  /* Left section (Contact heading and subheading) */
+  .footer-left {
+    text-align: center;
+  }
+  
+  /* Footer heading (Contact) */
+  .footer-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    
+  }
+  
+  /* Footer subheading  */
+  .footer-subheading {
+    font-size: 1.5rem;
+    font-weight:normal;
+    margin-top: 0.5rem; /* Space between heading and subheading */
+  }
+  
+  /* Footer list */
+  .footer-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  /* Footer list items (each contact method) */
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem; 
+  }
+  
+ 
+  @media (min-width: 768px) {
+    .footer-heading {
+      font-size: 3rem;
+    }
+  
+    .footer-subheading {
+      font-size: 1.25rem;
+    }
+  
+    .footer-item {
+      font-size: 1.25rem;
+    }
+  }
+  

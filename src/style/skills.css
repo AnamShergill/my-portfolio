@@ -1,0 +1,93 @@
+/* Container styles */
+.skills-container {
+    
+    padding: 3rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 2.5rem;
+  }
+  
+  /* Heading */
+  .skills-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .skills-content {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  /* For larger screens, arrange content side by side */
+  @media (min-width: 640px) {
+    .skills-content {
+      flex-direction: row; 
+      justify-content: space-between; 
+    }
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the icons section */
+  }
+  
+  .icon-item {
+    padding: 1rem;
+    background-color: #1A1A1A; /* Dark background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Info Section */
+  .skills-info {
+    flex-grow: 1; 
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+    padding: 2rem; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 1rem; 
+  }
+  
+  /* Heading inside the info section */
+  .info-heading {
+    color: #4C6EF5; /* Indigo color */
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem; 
+    padding: 0.5rem; 
+  }
+  
+  /* Skills List */
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.25rem;
+    margin-top: 0; /* Remove any top margin */
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: baseline;
+    color: white;
+    
+  }
+  
+  .list-item-title {
+    font-weight: 600;
+    margin-right: 1rem;
+  }
+  

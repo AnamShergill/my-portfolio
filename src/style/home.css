@@ -1,0 +1,90 @@
+/* styles/home.css */
+
+/* Container for the entire section */
+.home-container {
+  display: flex;
+  width: 100%;
+  padding: 2.5rem;
+  color: rgb(249, 244, 244);
+  align-items: flex-start;
+}
+
+/* For the left section */
+.home-left {
+  width: 50%;
+  padding-top: 5rem;
+}
+
+.home-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.05rem;
+  
+}
+
+.home-text {
+  font-size: 1rem;
+  letter-spacing: -0.02rem;
+  margin-bottom: 1rem;
+ 
+}
+
+.home-text a {
+  color: inherit; 
+}
+
+/* Button Styling */
+.home-button {
+  margin-top: 1.25rem;
+  font-size: 1rem; 
+  padding: 0.75rem 1.5rem; 
+  background-color: #465697; 
+  color: white; 
+  font-weight: 600; 
+  border-radius: 2rem; 
+  border: none; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover effect for the button */
+.home-button:hover {
+  opacity: 0.85; 
+  transform: scale(1.05);
+}
+
+/* Focus effect to improve accessibility */
+.home-button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 4px rgba(70, 86, 151, 0.5);
+}
+
+/* Disabled button style */
+.home-button:disabled {
+  background-color: #9ca3af; 
+  cursor: not-allowed; 
+  opacity: 0.6; 
+}
+
+.home-right img {
+  width: 150%;
+  height:auto;
+  max-height: 26rem;
+  padding-top: 8%;
+ 
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+  .home-left .home-heading {
+    font-size: 3.75rem;
+   
+  }
+
+  .home-left .home-text {
+    font-size: 1.5rem;
+   
+  }
+}

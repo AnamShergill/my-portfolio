@@ -1,0 +1,90 @@
+/* styles/header.css */
+
+/* Header Container */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.5rem;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      align-items: center;
+    }
+  }
+  
+  /* Brand */
+  .header .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Menu */
+  .header .menu {
+    display: none;
+    list-style: none;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2%;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    gap: 25px;
+  }
+  
+  .header .menu a {
+    display: block;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    text-decoration: none;
+  }
+  
+  .header .menu a:hover {
+    transition: all 0.3s;
+  }
+  
+  @media (min-width: 768px) {
+    .header .menu {
+      display: flex;
+      position: static;
+      margin: 0;
+      background-color: transparent;
+      border: none;
+    }
+    .header .menu a {
+      padding: 0;
+    }
+    .header .menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+  /* Menu Toggle */
+  .header .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    transition: all 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .header .menu-toggle {
+      display: block;
+    }
+  }
+  

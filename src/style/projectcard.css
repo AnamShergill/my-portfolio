@@ -1,0 +1,140 @@
+/* Projects.css */
+.projects-container {
+    padding: 2.5rem; 
+    color: white;
+  }
+  
+  .projects-title {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: white;
+    
+  }
+  
+  @media (min-width: 768px) {
+   
+    .projects-container {
+      padding: 6rem;
+    }
+  
+    .projects-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  /* The container for all project cards */
+  .projects-cards {
+    display: flex;                  /* Use flexbox to arrange items in a row */
+    justify-content: space-between;  /* Evenly distribute the cards */
+    gap: 1.25rem;                   /* Gap between the cards */
+    padding-top: 3rem;              
+    padding-left: 2rem;             
+    padding-right: 2rem;            
+    flex-wrap: nowrap;             
+  }
+  
+  /* Individual project card styling */
+  .project-card {
+    width: 20rem; /* Set a fixed width for each card so they stay in a row */
+    background-color: #0c0e19;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    border-radius: 1.25rem; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+  }
+  
+  .project-image {
+    padding: 1rem; 
+  }
+  
+  .project-title {
+    padding: 0; 
+    margin: 0; 
+    font-size: 1.25rem; 
+    font-weight: bold;
+    line-height: 1.5; 
+  }
+  
+  .project-description {
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    padding-top: 0.5rem;
+  }
+
+  .project-card > .project-title {
+    margin-bottom: 0.25rem; 
+  }
+
+  .projects-cards .project-card:last-child {
+    margin-right: 0; 
+  }
+  
+  /* Fix extra gap on smaller screens */
+  @media (max-width: 768px) {
+    .projects-cards {
+      flex-wrap: wrap; 
+    }
+  
+    .project-card {
+      width: 30%; /* 3 cards per row on small screens */
+    }
+  }
+  
+  /* Styling for Project Buttons */
+.project-button {
+    padding: 0.75rem 1.5rem; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    border-radius: 1.5rem; 
+    background-color: #465697; 
+    color: white; 
+    border: 2px solid transparent; 
+    transition: all 0.3s ease; 
+    text-align: center; 
+    text-transform: uppercase; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    width: fit-content; 
+    display: inline-block; 
+  }
+  
+  /* Hover effect for buttons */
+  .project-button:hover {
+    opacity: 0.9; 
+    transform: translateY(-3px);
+    background-color: #3c4a75; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .project-button:focus,
+  .project-button:active {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(72, 100, 179, 0.5); 
+  }
+  
+  /* Styling for Project Buttons with spacing and alignment */
+  .project-buttons {
+    margin-top: 1rem; 
+    display: flex;
+    gap: 1.5rem; /* Gap between buttons */
+    justify-content: center; /* Center the buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap if needed on smaller screens */
+  }
+  
+  
+  /* Responsive styling: making sure cards stay side by side on smaller screens */
+  @media (max-width: 768px) {
+    .projects-cards {
+      flex-wrap: nowrap; /* Still prevent wrapping even on smaller screens */
+    }
+  
+    .project-card {
+      width: 30%; /* Adjust width to 30% to ensure three cards fit side by side */
+    }
+  }
+  

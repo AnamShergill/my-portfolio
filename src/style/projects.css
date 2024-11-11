@@ -1,0 +1,128 @@
+/* Projects.css */
+
+.projects-container {
+    padding: 3rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 0.5rem;
+   
+  }
+  
+  .projects-title {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: white;
+    
+    
+  }
+  
+  @media (min-width: 768px) {
+ 
+    .projects-container {
+      padding: 6rem;
+    }
+  
+    .projects-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .projects-cards {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 1.25rem; 
+    justify-content: space-between; 
+    padding-top: 3rem; 
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  
+  .project-card {
+    flex: 1 1 20rem; 
+    margin-bottom: 2rem; 
+    background-color: #0c0e19;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    border-radius: 1.25rem; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-image {
+    padding: 1rem; 
+  }
+  
+  /* Styling for Project Title */
+.project-title {
+    padding: 0; 
+    margin: 0; 
+    font-size: 1.25rem; 
+    font-weight: bold;
+    line-height: 1.5; 
+  }
+  
+  /* Styling for Project Description */
+  .project-description {
+    padding: 0; 
+    margin: 0; 
+    font-size: 0.875rem; 
+    line-height: 1.25; 
+    padding-top: 0.5rem; 
+  }
+  
+  /* The container of Project Title and Description */
+  .project-card > .project-title,
+  .project-card > .project-description {
+    margin-bottom: 0.25rem; 
+  }
+  
+  
+  .project-buttons {
+    margin-top: 0.5rem; 
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem; 
+  }
+  
+  .project-button {
+    padding: 0.5rem 1rem; 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    border-radius: 1.25rem; 
+    background-color: #465697;
+    color: white;
+    transition: all 0.3s ease; 
+  }
+  
+  .project-button:hover {
+    opacity: 0.85;
+    transform: scale(1.05); 
+  }
+  
+  @media (min-width: 768px) {
+    
+    .project-title {
+      font-size: 1.5rem;
+    }
+  
+   
+    .project-description {
+      font-size: 1rem;
+    }
+  
+    
+    .project-buttons {
+      gap: 1rem;
+    }
+  
+    
+    .project-button {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  
+    
+    .project-buttons .project-button {
+      margin-top: 2.5rem;
+    }
+  }
+  
