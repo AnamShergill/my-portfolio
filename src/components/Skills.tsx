@@ -33,7 +33,7 @@ const Skills = () => {
         <div className="skills-info">
           
           <ul className="skills-list">
-          <h2 className="info-heading">Technologies & Tools I'm Learning</h2>
+          <h2 className="info-heading">Technologies & Tools I&apos;m Learning</h2>
           <br/>
             <li><span className="list-item-title">Front-End:</span> HTML, CSS, JavaScript, React</li>
             <li><span className="list-item-title">Back-End:</span> Node.js (exploring)</li>

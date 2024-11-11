@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import TextChange from '../components/TextChange';  
-import image from "../public/images/image1.png"; 
+; 
 import "../style/home.css";
 
 export default function Home() {
@@ -21,7 +21,13 @@ export default function Home() {
         </a>
       </div>
       <div className="home-right">
-        <Image src={image} alt="Developer image" layout="intrinsic" />
+      <Image 
+  src="/image1.png" 
+  alt="Description" 
+  width={400} 
+  height={400} 
+  layout="responsive"
+/>
       </div>
     </div>
   );

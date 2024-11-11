@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, {useMemo, useState, useEffect } from "react";
 
 const TextChange = () => {
-  const texts = ["Hi, I'm Anam"];
+  const texts = useMemo (()=>["Hi, I&apos;m Anam"],[]) ;
   const [currentText, setCurrentText] = useState("");
   const [endValue, setEndValue] = useState(0);  
   const [isForward, setIsForward] = useState(true);

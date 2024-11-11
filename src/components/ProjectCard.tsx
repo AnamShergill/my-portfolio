@@ -1,7 +1,7 @@
 // ProjectCard.tsx
 
 import React from 'react';
-import projectImg from '../public/images/coding.image.jpg';
+import Image from 'next/image';
 import '../style/projectcard.css';
 
 interface ProjectCardProps {
@@ -14,7 +14,13 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, main, demoLink, sourceCodeLink }) => {
   return (
     <div className="project-card">
-      <img className="project-image" src={projectImg.src} alt="projectImage" />
+      <Image 
+  src="/coding.image.jpg" 
+  alt="Description" 
+  width={500} 
+  height={300} 
+  layout="intrinsic"
+/>
       <h3 className="project-title">
         {title}
       </h3>
