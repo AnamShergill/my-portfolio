@@ -34,7 +34,7 @@ const About = () => {
             <div className='about-text'>
               <h1 className='about-title'>My Goal</h1>
               <p className='about-paragraph'>
-                My ultimate goal is to become a versatile software developer with expertise in both front-end and back-end development. I&apos;m excited about creating innovative web and mobile applications that make a difference, whether it's a tool to simplify everyday tasks or a creative project to inspire others.
+                My ultimate goal is to become a versatile software developer with expertise in both front-end and back-end development. I am excited about creating innovative web and mobile applications that make a difference, whether it's a tool to simplify everyday tasks or a creative project to inspire others.
               </p>
             </div>
           </div>
