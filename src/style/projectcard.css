@@ -30,7 +30,9 @@
     padding-top: 3rem;              
     padding-left: 2rem;             
     padding-right: 2rem;            
-    flex-wrap: nowrap;             
+    flex-wrap: nowrap; 
+    margin-inline-start: 5px; 
+
   }
   
   /* Individual project card styling */

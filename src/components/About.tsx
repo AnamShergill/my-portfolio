@@ -1,21 +1,25 @@
 import React from 'react';
-import { IoArrowForward } from 'react-icons/io5';
 import Image from 'next/image';
+import { IoArrowForward } from 'react-icons/io5';
 import "../style/about.css"
 
 const About = () => {
   return (
-    <div id='About' className='about-container'>
+    <div id='About' className='about-container'  >
       
-      <div className='about-content'>
-      <h2 className='about-heading'>About Me</h2>
+      <div className='about-content' >
+      <h1 className='about-heading'>About Me</h1>
+      
       <Image 
-         src="/image.coding1.png" 
-         alt="Description" 
-         width={450} 
-         height={300} 
-          layout="intrinsic"
-         />
+  src="/images/image.coding1.png" 
+  alt="Description" 
+  width={450} 
+  height={300}
+  layout='intrinsic' 
+ 
+ 
+/>
+
         
         <ul className='about-list'>
           <div className='about-item'>

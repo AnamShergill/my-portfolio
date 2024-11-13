@@ -13,12 +13,12 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, main, demoLink, sourceCodeLink }) => {
   return (
-    <div className="project-card">
-      <Image 
-  src="/coding.image.jpg" 
+    <div className="project-card" >
+     <Image 
+  src="/images/coding.image.jpg" 
   alt="Description" 
-  width={500} 
-  height={300} 
+  width={480} 
+  height={250} 
   layout="intrinsic"
 />
       <h3 className="project-title">

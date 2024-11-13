@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import TextChange from '../components/TextChange';  
-; 
+ 
 import "../style/home.css";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
           <TextChange />
         </h1>
         <p className="home-text">
-          I’m a passionate developer currently mastering web technologies and building interactive,
+          I&apos;m a passionate developer currently mastering web technologies and building interactive,
           user-friendly websites and apps.
           <br />
           Want to know more about me? <br /> Check out my portfolio below!
@@ -22,11 +22,13 @@ export default function Home() {
       </div>
       <div className="home-right">
       <Image 
-  src="/image1.png" 
+  src="/images/image1.png" 
   alt="Description" 
-  width={400} 
-  height={400} 
-  layout="responsive"
+  width={450} 
+  height={500}
+  layout='intrinsic' 
+ 
+ 
 />
       </div>
     </div>
