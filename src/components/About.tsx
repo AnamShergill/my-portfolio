@@ -16,19 +16,15 @@ const About = () => {
   width={450} 
   height={300}
   layout='intrinsic' 
- 
- 
-/>
-
-        
+ />      
         <ul className='about-list'>
           <div className='about-item'>
             <IoArrowForward size={30} className='icon' />
             <div className='about-text'>
               <h1 className='about-title'>My Journey</h1>
               <p className='about-paragraph'>
-                I&apos;m a student deeply engaged in the world of software development. My journey began with a curiosity about how websites are built, and over time, I&apos;ve expanded my skill set to include a variety of tools and technologies to bring ideas to life. 
-                I&apos;m always eager to tackle new challenges and improve my craft..
+                I am a student deeply engaged in the world of software development. My journey began with a curiosity about how websites are built, and over time, I have expanded my skill set to include a variety of tools and technologies to bring ideas to life. 
+                I am always eager to tackle new challenges and improve my craft..
               </p>
             </div>
           </div>

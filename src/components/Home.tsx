@@ -11,7 +11,7 @@ export default function Home() {
           <TextChange />
         </h1>
         <p className="home-text">
-          I&apos;m a passionate developer currently mastering web technologies and building interactive,
+          I am a passionate developer currently mastering web technologies and building interactive,
           user-friendly websites and apps.
           <br />
           Want to know more about me? <br /> Check out my portfolio below!
