@@ -14,11 +14,12 @@ const Footer = () => {
       <ul className="footer-list">
         <li className="footer-item">
           <MdOutlineEmail size={20} />
-          pinkyshergill1986@gmail.com
+          <a href="mailto:pinkyshergill1986@gmail.com?subject=Subject%20Here&body=Hello%2C%20I'd%20like%20to%20...">Send me an Email </a>
+
         </li>
         <li className="footer-item">
           <FaGithub />
-          github.com/AnamShergill
+         <a href="https:/github.com/AnamShergill" target="_blank"> github.com/AnamShergill</a>
         </li>
       </ul>
     </div>
