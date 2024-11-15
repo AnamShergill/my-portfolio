@@ -9,7 +9,7 @@
     justify-content: space-around;
     align-items: center;
     color: white;
-    padding: 2.5rem 1rem; 
+    padding: 2.5rem 0.1rem; 
   }
   
   /* Left section (Contact heading and subheading) */
@@ -19,7 +19,7 @@
   
   /* Footer heading (Contact) */
   .footer-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     
   }
@@ -35,6 +35,7 @@
   .footer-list {
     list-style-type: none;
     padding: 0;
+    padding-top: 2rem;
     font-size: 1rem;
     font-weight: normal;
   }
@@ -54,7 +55,7 @@
     }
   
     .footer-subheading {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   
     .footer-item {
