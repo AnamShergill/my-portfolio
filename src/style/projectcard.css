@@ -1,143 +1,172 @@
 /* Projects.css */
-.projects-container {
-    padding: 2.5rem; 
-    color: white;
-  }
-  
-  .projects-title {
-    font-size: 1.5rem; 
-    font-weight: bold;
-    color: white;
-    
-  }
-  
-  @media (min-width: 768px) {
-   
-    .projects-container {
-      padding: 6rem;
-    }
-  
-    .projects-title {
-      font-size: 2.25rem;
-    }
-  }
-  
-  /* The container for all project cards */
+
+/* The container for all project cards */
+.projects-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-wrap: wrap;  /* Allow wrapping to make it responsive */
+  margin-inline-start: 5px;
+  margin-bottom: 2rem;
+  align-items: stretch; /* Ensure cards are aligned properly */
+}
+
+/* Individual project card styling */
+.project-card {
+  width: 100%; /* Default to full width on smaller screens */
+  max-width: 20rem; /* Limit max width */
+  background-color: #0c0e19;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+  /* Center content vertically inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image styling inside the project card */
+.project-image {
+  width: 100%;              /* Set image width to fill the container */
+  height: 200px;            /* Set fixed height for the image */
+  object-fit: cover;        /* Ensure image fills the space and maintains aspect ratio */
+  margin: 0 auto;           /* Center the image horizontally */
+  padding-top: 1rem;        /* Add padding to the top of the image */
+  border-top-left-radius: 1.25rem;  /* Optional: Rounded corners on top of the image */
+  border-top-right-radius: 1.25rem; /* Optional: Rounded corners on top of the image */
+  box-sizing: border-box;   /* Ensure padding is included in the width and height */
+  background-color: #333;   /* Optional: Add background color behind the image if it doesn't fill the space */
+}
+
+/* Adjust the card's content */
+.project-card .card-content {
+  padding: 1.25rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.project-description {
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  padding-top: 0.5rem;
+}
+
+.project-card > .project-title {
+  margin-bottom: 0.25rem;
+}
+
+.projects-cards .project-card:last-child {
+  margin-right: 0;
+}
+
+/* Fix extra gap on smaller screens */
+@media (max-width: 768px) {
   .projects-cards {
-    display: flex;                  /* Use flexbox to arrange items in a row */
-    justify-content: space-between;  /* Evenly distribute the cards */
-    gap: 1.25rem;                   /* Gap between the cards */
-    padding-top: 3rem;              
-    padding-left: 2rem;             
-    padding-right: 2rem;            
-    flex-wrap: nowrap; 
-    margin-inline-start: 5px; 
-
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  
-  /* Individual project card styling */
+
   .project-card {
-    width: 20rem; /* Set a fixed width for each card so they stay in a row */
-    background-color: #0c0e19;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
-    border-radius: 1.25rem; 
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 0;
-    
+    width: 100%; /* Ensure full width on mobile */
+    max-width: none; /* Remove max-width for mobile */
+    padding-left: 1rem; /* Padding inside card */
+    padding-right: 1rem; /* Padding inside card */
   }
-  
+
   .project-image {
-    padding: 1rem; 
-  }
-  
-  .project-title {
-    padding: 0; 
-    margin: 0; 
-    font-size: 1.25rem; 
-    font-weight: bold;
-    line-height: 1.5; 
-  }
-  
-  .project-description {
-    padding: 0;
-    margin: 0;
-    font-size: 0.875rem;
-    line-height: 1.25;
-    padding-top: 0.5rem;
+    height: 150px; /* Reduce image height on mobile for better proportion */
+    padding-top: 0.5rem; /* Add smaller top padding for mobile */
   }
 
-  .project-card > .project-title {
-    margin-bottom: 0.25rem; 
+  .card-content {
+    padding: 1rem; /* Reduce padding inside card content */
   }
+}
 
-  .projects-cards .project-card:last-child {
-    margin-right: 0; 
-  }
-  
-  /* Fix extra gap on smaller screens */
-  @media (max-width: 768px) {
-    .projects-cards {
-      flex-wrap: wrap; 
-    }
-  
-    .project-card {
-      width: 30%; /* 3 cards per row on small screens */
-    }
-  }
-  
-  /* Styling for Project Buttons */
+/* Styling for Project Buttons */
 .project-button {
-    padding: 0.75rem 1.5rem; 
-    font-size: 1rem; 
-    font-weight: 600; 
-    border-radius: 1.5rem; 
-    background-color: #465697; 
-    color: white; 
-    border: 2px solid transparent; 
-    transition: all 0.3s ease; 
-    text-align: center; 
-    text-transform: uppercase; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    cursor: pointer; 
-    width: fit-content; 
-    display: inline-block; 
-  }
-  
-  /* Hover effect for buttons */
-  .project-button:hover {
-    opacity: 0.9; 
-    transform: translateY(-3px);
-    background-color: #3c4a75; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-  }
-  
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  background-color: #465697;
+  color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+  margin-top: 1rem; /* Margin to ensure the button isn't touching the content */
+  align-self: center; /* Center the button horizontally inside the card */
+}
 
-  .project-button:focus,
-  .project-button:active {
-    outline: none; 
-    box-shadow: 0 0 0 4px rgba(72, 100, 179, 0.5); 
+/* Hover effect for buttons */
+.project-button:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  background-color: #3c4a75;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-button:focus,
+.project-button:active {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(72, 100, 179, 0.5);
+}
+
+/* Styling for Project Buttons with spacing and alignment */
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; /* Ensure buttons are centered */
+}
+
+/* Responsively adjust project cards */
+@media (max-width: 768px) {
+  .projects-cards {
+    flex-direction: column;
+    gap: 2rem;
   }
-  
-  /* Styling for Project Buttons with spacing and alignment */
-  .project-buttons {
-    margin-top: 1rem; 
-    display: flex;
-    gap: 1.5rem; /* Gap between buttons */
-    justify-content: center; /* Center the buttons */
-    flex-wrap: wrap; 
+
+  .project-card {
+    width: 100%;
   }
-  
-  
-  /* Responsive styling: making sure cards stay side by side on smaller screens */
-  @media (max-width: 768px) {
-    .projects-cards {
-      flex-wrap: nowrap; /* Still prevent wrapping even on smaller screens */
-    }
-  
-    .project-card {
-      width: 30%; 
-    }
+
+  .project-button {
+    width: 100%;
+    max-width: 300px; /* Limit button width on small screens */
+    margin-top: 1rem; /* Space between button and content */
   }
-  
+}
