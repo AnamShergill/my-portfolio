@@ -4,31 +4,38 @@ import "../style/header.css";
 
 
 import React, { useState } from 'react';
-import {  RiMenu2Line } from '@remixicon/react';
+import {  RiMenu2Line, RiCloseLine } from '@remixicon/react';
 
 
-function Header() {
-  const [menu] = useState(false);
-  const [showMenu, setShowMenu] = useState(true);
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-   // For testing, set it to true
+  // Toggle the menu when the burger icon is clicked
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+   
 
 return (
   <header className="header">
     <span className="brand">Portfolio</span>
 
-    <ul className={`menu ${menu ? "block" : "hidden"}`}>
-      <a href="#About"><li className="menu-item">About</li></a>
-      <a href="#Skills"><li className="menu-item">Skills</li></a>
-      <a href="#Projects"><li className="menu-item">Projects</li></a>
-      <a href="#Footer"><li className="menu-item">Contact</li></a>
-    </ul>
+      {/* Menu */}
+      <ul className={`menu ${isMenuOpen ? "show" : ""}`}>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <RiMenu2Line
-      size={30}
-      className="menu-toggle"
-      onClick={() => setShowMenu(!showMenu)} // Toggle the menu
-    />
+      <div className="menu-toggle" onClick={toggleMenu}>
+        {isMenuOpen ? (
+          <RiCloseLine size={30} />
+        ) : (
+          <RiMenu2Line size={30} />
+        )}
+      </div>
   </header>
 );
 }

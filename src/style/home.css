@@ -3,88 +3,123 @@
 /* Container for the entire section */
 .home-container {
   display: flex;
+  flex-wrap: wrap; /* Allow children to wrap on smaller screens */
   width: 100%;
   padding: 2.5rem;
   color: rgb(249, 244, 244);
   align-items: flex-start;
+  box-sizing: border-box; 
+  overflow: hidden; 
 }
 
 /* For the left section */
 .home-left {
-  width: 50%;
+  width: 100%; /* Full width on mobile */
   padding-top: 5rem;
+  box-sizing: border-box; 
+  word-wrap: break-word; 
 }
 
 .home-heading {
-  font-size: 2rem;
+  font-size: 2rem; /* Adjusted for responsiveness */
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: -0.05rem;
-  
 }
 
 .home-text {
   font-size: 1rem;
   letter-spacing: -0.02rem;
   margin-bottom: 1rem;
- 
+  word-wrap: break-word; 
+  white-space: normal; 
 }
 
 .home-text a {
-  color: inherit; 
+  color: inherit;
+  word-wrap: break-word; /* Ensure links also break if they're too long */
 }
 
 /* Button Styling */
 .home-button {
   margin-top: 1.25rem;
-  font-size: 1rem; 
-  padding: 0.75rem 1.5rem; 
-  background-color: #465697; 
-  color: white; 
-  font-weight: 600; 
-  border-radius: 2rem; 
-  border: none; 
-  cursor: pointer; 
-  transition: all 0.3s ease; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #465697;
+  color: white;
+  font-weight: 600;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect for the button */
 .home-button:hover {
-  opacity: 0.85; 
+  opacity: 0.85;
   transform: scale(1.05);
 }
 
 /* Focus effect to improve accessibility */
 .home-button:focus {
-  outline: none; 
+  outline: none;
   box-shadow: 0 0 0 4px rgba(70, 86, 151, 0.5);
 }
 
 /* Disabled button style */
 .home-button:disabled {
-  background-color: #9ca3af; 
-  cursor: not-allowed; 
-  opacity: 0.6; 
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
+/* Right Section Image */
 .home-right img {
-  width: 150%;
-  height:auto;
+  width: 100%; /* Make the image responsive */
+  max-width: 600px; 
+  height: auto;
   max-height: 26rem;
   padding-top: 8%;
- 
+  object-fit: cover; 
 }
 
 /* Responsive adjustments for larger screens */
 @media (min-width: 768px) {
-  .home-left .home-heading {
+  .home-left {
+    width: 50%; /* Take up 50% of the width on larger screens */
+  }
+
+  .home-heading {
     font-size: 3.75rem;
-   
   }
 
   .home-left .home-text {
     font-size: 1.5rem;
-   
+  }
+
+  .home-right {
+    width: 50%; 
+    padding-top: 0; 
+  }
+}
+
+/* Additional smaller screen adjustments */
+@media (max-width: 600px) {
+  .home-left {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .home-heading {
+    font-size: 2.5rem; /* Smaller heading on small screens */
+  }
+
+  .home-left .home-text {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+  }
+
+  .home-button {
+    font-size: 0.9rem; /* Slightly smaller button on smaller screens */
+    padding: 0.6rem 1.2rem; 
   }
 }

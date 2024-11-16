@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 40px;
@@ -13,12 +13,14 @@
   width: auto;
 }
 
+/* Heading styles */
 .about-heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* Main content wrapper */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -27,12 +29,16 @@
   width: 100%;
 }
 
+/* Image styles */
 .about-image {
-  height: 320px;
+  max-width: 100%;
+  height: auto; 
   object-fit: cover;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
+/* About list - Flex direction switch for smaller screens */
 .about-list {
   display: flex;
   flex-direction: column;
@@ -50,8 +56,10 @@
   margin-top: 4px;
 }
 
+/* Text container */
 .about-text {
   width: 400px;
+  max-width: 100%; /* Make sure it doesn’t overflow on smaller screens */
 }
 
 .about-title {
@@ -65,5 +73,63 @@
   line-height: 1.9;
   font-weight: normal;
   text-align: left;
+}
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 1.75rem;
+    text-align: center; 
+  }
+
+  .about-container {
+    padding: 20px; 
+  }
+
+  .about-content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .about-image {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 15px; 
+  }
+
+  .about-text {
+    width: 100%; 
+    padding: 0 20px; 
+  }
+
+  .about-list {
+    gap: 15px; /* Smaller gap between items */
+  }
+
+  .about-title {
+    font-size: 1.25rem; /* Smaller title font size */
+  }
+
+  .about-paragraph {
+    font-size: 1.125rem; /* Slightly smaller paragraph font size */
+  }
+}
+
+/* Additional responsiveness for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 1.5rem; /* Smaller heading on very small screens */
+  }
+
+  .about-text {
+    width: 100%; 
+  }
+
+  .about-title {
+    font-size: 1.1rem; 
+  }
+
+  .about-paragraph {
+    font-size: 1rem; 
+  }
 }

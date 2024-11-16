@@ -45,6 +45,7 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 0;
+    
   }
   
   .project-image {
@@ -125,7 +126,7 @@
     display: flex;
     gap: 1.5rem; /* Gap between buttons */
     justify-content: center; /* Center the buttons */
-    flex-wrap: wrap; /* Allow buttons to wrap if needed on smaller screens */
+    flex-wrap: wrap; 
   }
   
   
@@ -136,7 +137,7 @@
     }
   
     .project-card {
-      width: 30%; /* Adjust width to 30% to ensure three cards fit side by side */
+      width: 30%; 
     }
   }
   
